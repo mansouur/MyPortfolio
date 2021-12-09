@@ -1,0 +1,11 @@
+.card{
+    border: 1px solid burlywood;
+}
+h1{
+    color:slateblue;
+}
+.gridSystem{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 2px;
+}
