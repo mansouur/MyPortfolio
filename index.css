@@ -17,6 +17,11 @@ body {
   text-align: center;
   padding-top: 10px;
 }
+sub{
+  font-size: 20px;
+  font-style: italic ;
+  font-weight: 300;
+}
 .card {
   color: #001a1d;
   background-color: #fcfcfc;
@@ -94,19 +99,14 @@ span {
 .projects {
   grid-area: projects;
 }
-.prjectgrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    grid-column: 1/2;
-}
+
 .gridSystem {
   display: grid;
   grid-template-areas:
-    'personalInfo careerObjective careerObjective'
-    'personalInfo education techSkills'
-    'personalInfo education personalSkills'
-    'personalInfo languages personalSkills'
+    'personalInfo techSkills personalSkills'
+    'personalInfo techSkills education'
+    'personalInfo techSkills languages'
+    'careerObjective careerObjective careerObjective'
     'projects projects projects';
   grid-gap: 2px;
 }
@@ -136,10 +136,10 @@ span {
   .gridSystem {
     display: grid;
     grid-template-areas:
-      'personalInfo careerObjective'
-      'personalInfo education'
       'personalInfo techSkills'
-      'languages personalSkills'
+      'personalSkills techSkills'
+      'education languages '
+      'careerObjective careerObjective'
       'projects projects';
     grid-gap: 2px;
   }
@@ -171,11 +171,11 @@ span {
     display: grid;
     grid-template-areas:
       'personalInfo'
-      'careerObjective'
-      'education'
       'techSkills'
-      'languages'
       'personalSkills'
+      'education'
+      'languages'
+      'careerObjective'
       'projects';
     grid-gap: 2px;
   } 
